@@ -1,0 +1,21 @@
+def Ag(a, b):
+    return a and b
+
+def Og(a, b):
+    return a or b
+
+def Ng(a):
+    return not a
+
+# Inputs
+A = int(input("Enter value for A (0 or 1): "))
+B = int(input("Enter value for B (0 or 1): "))
+C = int(input("Enter value for C (0 or 1): "))
+
+# Logic Operations
+X = Ag(A, B)
+Y = Og(X, C)
+Q = Ng(Y)
+
+# Output
+print(f"The output Q is: {int(Q)}")
